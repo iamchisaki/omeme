@@ -45,6 +45,6 @@ reset.addEventListener("click", function(){
 clearInterval(Interval);
 start.disabled = false;
 timer.innerHTML = "00:00:00";
-//hrs = 0; min = 0; sec = 0; un = 0;
+min = 0; sec = 0; ms = 0;
 })
 
