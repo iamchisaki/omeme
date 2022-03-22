@@ -25,7 +25,8 @@ function stopWatch(){
 }
 }
 
-timer.innerHTML = ('0'+min).substr(-2) + ":" + ('0'+sec).substr(-2) + ":" + ('0'+ms).substr(-2); 
+timer.innerHTML
+= ('0'+min).substr(-2) + ":" + ('0'+sec).substr(-2) + ":" + ('0'+ms).substr(-2); 
 } 
 
 
