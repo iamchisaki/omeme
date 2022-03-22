@@ -13,9 +13,10 @@ let ms = 0;
 
 let Interval;
 
+
 function stopWatch(){
   ms++; //1足す
- if(ms / 100 == 2){
+ if(ms / 99 == 1){
   sec++;
   ms = 0;
  if(sec / 60 == 1){
@@ -24,13 +25,12 @@ function stopWatch(){
 }
 }
 
-timer.innerHTML
-= ('0'+min).substr(-2) + ":" + ('0'+sec).substr(-2) + ":" + ('0'+ms).substr(-2); 
+timer.innerHTML= ('0'+min).substr(-2) + ":" + ('0'+sec).substr(-2) + ":" + ('0'+ms).substr(-2); 
 } 
 
 
 start.addEventListener("click",function(){
- Interval = setInterval(stopWatch)
+ Interval = setInterval(stopWatch,10)
  this.disabled = true;
 })
 
