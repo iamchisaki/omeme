@@ -15,10 +15,9 @@ let Interval;
 
 function stopWatch(){
   ms++; //1足す
- if(ms / 100 == 1){
+ if(ms / 100 == 2){
   sec++;
   ms = 0;
-
  if(sec / 60 == 1){
   min++;
   sec = 0;
